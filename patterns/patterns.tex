@@ -1,6 +1,7 @@
 \documentclass{standalone}
 
 \usepackage{tikz}
+\usepackage{etoolbox}
 
 \usepackage{xcolor}
 \definecolor{border}{gray}{0.66}
@@ -11,10 +12,19 @@
 \definecolor{darkblue}{rgb}{0.149,0.2,0.0235}
 \definecolor{blue}{rgb}{0.18,0.247,0.318}
 
-\newcommand{\drawblock}[3]{%
-    \begin{scope}[shift={(2*#2,2*#3)}]
+\newcommand{\thiscirc}{blue}
+
+\newcommand{\drawblock}[2]{%
+    \ifnumequal{#1+#2}{2}{\renewcommand{\thiscirc}{tan}}{}
+    \ifboolexpr{%
+        test {\ifnumequal{#1+#2}{0}}
+        or
+        test {\ifnumequal{#1+#2}{3}}
+    }{\renewcommand{\thiscirc}{red}}{}
+    
+    \begin{scope}[shift={(2*#1,2*#2)}]
         \foreach \x/\y in {0/0,0/1,1/0,1/1}{
-            \node[circle,draw=dark#1,fill=#1,minimum size=5ex] at (\x,\y) {};
+            \node[circle,draw=dark\thiscirc,fill=\thiscirc,minimum size=5ex] at (\x,\y) {};
         }
     \end{scope}
 }
@@ -28,16 +38,10 @@
             }
         \end{scope}
         
-        \foreach \i/\j in {0/2,1/1,2/0}{%
-            \drawblock{tan}{\i}{\j}
-        }
-        
-        \foreach \i/\j in {0/0,1/2,2/1}{%
-            \drawblock{red}{\i}{\j}
-        }
-    
-        \foreach \i/\j in {0/1,1/0,2/2}{%
-            \drawblock{blue}{\i}{\j}
+        \foreach \i in {0,1,2}{
+            \foreach \j in {0,1,2}{
+                \drawblock{\i}{\j}
+            }
         }
     \end{tikzpicture}
 \end{document}
