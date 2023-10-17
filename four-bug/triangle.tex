@@ -1,0 +1,19 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+
+\begin{document}
+    \begin{tikzpicture}
+        \node at (5.5,0) {\((a,w)\)};
+        \node at (-0.5,2) {\((b,x)\)};
+        
+        \draw (0,0) -- (5,0) -- (0,2) --cycle;
+        
+        \node at (4,0.2) {\(\theta\)};
+        
+        \node at (2.5,-0.25) {\(a-b\)};
+        \node at (-0.5,1) {\(x-w\)};
+        
+        \draw[dashed] (3,0) -- (3,0.8);
+    \end{tikzpicture}
+\end{document}
