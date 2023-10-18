@@ -7,3 +7,4 @@ Nevertheless, I thought it would be a fun challenge to try to reproduce these in
 Published blog posts:
 
 1. [Patterns](https://aperiodical.com/2023/08/1-patterns/) (November 1969)
+2. [Four bugs](https://aperiodical.com/2023/10/2-four-bugs/) (July 1965)
