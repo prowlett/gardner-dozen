@@ -9,3 +9,4 @@ Published blog posts:
 1. [Patterns](https://aperiodical.com/2023/08/1-patterns/) (November 1969)
 2. [Four bugs](https://aperiodical.com/2023/10/2-four-bugs/) (July 1965)
 3. [Graeco-Latin square](https://aperiodical.com/2024/04/3-graeco-latin-square/) (November 1959)
+4. [Prime-number Pattern](https://aperiodical.com/2024/06/4-prime-number-pattern/) (March 1964)
