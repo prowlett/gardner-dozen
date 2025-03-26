@@ -10,3 +10,4 @@ Published blog posts:
 2. [Four bugs](https://aperiodical.com/2023/10/2-four-bugs/) (July 1965)
 3. [Graeco-Latin square](https://aperiodical.com/2024/04/3-graeco-latin-square/) (November 1959)
 4. [Prime-number Pattern](https://aperiodical.com/2024/06/4-prime-number-pattern/) (March 1964)
+5. [Mathematics of the "I Ching"](https://aperiodical.com/2025/03/5-mathematics-of-the-i-ching/) (January 1974)
